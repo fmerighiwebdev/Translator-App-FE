@@ -18,8 +18,8 @@ function Languages() {
           {
             headers: {
               "X-RapidAPI-Key":
-                "727cbb2594msh74d176ce792be42p1d1a15jsnbcfc845c7f7e",
-              "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
+                process.env.REACT_APP_RAPIDAPI_KEY,
+              "X-RapidAPI-Host": process.env.REACT_APP_RAPIDAPI_HOST,
             },
           }
         );
