@@ -1,0 +1,77 @@
+.detect h2 {
+    margin: 2rem 0 0 0;
+    padding-bottom: 1rem;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    color: var(--text-color);
+}
+
+.detect-form {
+    margin: 4rem auto;
+}
+
+.detect-form textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.detect-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.result {
+    margin: 0;
+    color: var(--text-color);
+    animation: fadeInFromLeft 0.5s ease forwards;
+}
+
+.result span {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 900;
+}
+
+.detect-form button {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.detect-form button:hover {
+    background-color: #9f5f24;
+}
+
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

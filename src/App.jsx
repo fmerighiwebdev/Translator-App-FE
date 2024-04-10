@@ -6,6 +6,7 @@ import "./styles/App.css";
 import Home from "./components/Home";
 import Languages from "./components/Languages";
 import Header from "./components/Header";
+import Detect from "./components/Detect";
 
 function App() {
   return (
@@ -26,6 +27,15 @@ function App() {
             <>
               <Header />
               <Languages />
+            </>
+          }
+        />
+        <Route
+          path="/detect"
+          element={
+            <>
+              <Header />
+              <Detect />
             </>
           }
         />

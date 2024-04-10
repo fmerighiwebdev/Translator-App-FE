@@ -11,11 +11,16 @@ function Header() {
     <header>
       <Container className="header-container">
         <div className="logo-content">
-          <Link to="/"><img src={translatorLogo} alt="Translator Logo"></img></Link>
+          <Link to="/">
+            <img src={translatorLogo} alt="Translator Logo"></img>
+          </Link>
           <h1>Translator App</h1>
         </div>
         <nav className="header-menu">
           <ul>
+            <li>
+              <Link to="/detect">Rileva lingua</Link>
+            </li>
             <li>
               <Link to="/languages">Lingue supportate</Link>
             </li>
