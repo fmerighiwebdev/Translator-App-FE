@@ -82,6 +82,7 @@
 .result {
     background-color: var(--tertiary-color);
     padding: 1rem;
+    border-radius: 5px;
     animation: fadeIn 0.5s ease forwards;
 }
 
