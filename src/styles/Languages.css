@@ -42,6 +42,12 @@
     margin: 3rem 0;
 }
 
+.section-description {
+    margin: 0;
+    padding-top: 1rem;
+    color: #858585;
+}
+
 .languages li {
     display: flex;
     align-items: center;

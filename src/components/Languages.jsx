@@ -46,6 +46,7 @@ function Languages() {
             </div>
           )}
           <h2>Lingue supportate</h2>
+          <p className="section-description">Qui puoi visualizzare tutte le lingue supportate dal traduttore</p>
           <ul>
             {languages.map((language, index) => (
               <Language key={index} language={language} />
