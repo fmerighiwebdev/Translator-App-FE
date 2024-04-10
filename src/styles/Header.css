@@ -53,7 +53,7 @@
 .link-active {
     background-color: var(--primary-color);
     color: white !important;
-}ù
+}
 
 .link-active:hover {
     color: white;
