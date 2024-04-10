@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 function Header() {
 
+  const [isActive, setIsActive] = React.useState("");
+
   return (
     <header>
       <Container className="header-container">
@@ -19,10 +21,31 @@ function Header() {
         <nav className="header-menu">
           <ul>
             <li>
-              <Link to="/detect">Rileva lingua</Link>
+              <Link
+                to="/translate"
+                onClick={() => setIsActive("Translate")}
+                className={isActive === "Translate" ? "link-active" : null}
+              >
+                Traduci
+              </Link>
             </li>
             <li>
-              <Link to="/languages">Lingue supportate</Link>
+              <Link
+                to="/detect"
+                onClick={() => setIsActive("Detect")}
+                className={isActive === "Detect" ? "link-active" : null}
+              >
+                Rileva lingua
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/languages"
+                onClick={() => setIsActive("Languages")}
+                className={isActive === "Languages" ? "link-active" : null}
+              >
+                Lingue supportate
+              </Link>
             </li>
           </ul>
         </nav>

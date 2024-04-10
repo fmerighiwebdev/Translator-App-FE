@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import Languages from "./components/Languages";
 import Header from "./components/Header";
 import Detect from "./components/Detect";
+import Translate from "./components/Translate";
 
 function App() {
   return (
@@ -36,6 +37,15 @@ function App() {
             <>
               <Header />
               <Detect />
+            </>
+          }
+        />
+        <Route
+          path="/translate"
+          element={
+            <>
+              <Header />
+              <Translate />
             </>
           }
         />
