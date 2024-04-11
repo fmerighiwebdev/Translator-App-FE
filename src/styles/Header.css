@@ -1,3 +1,7 @@
+header {
+    animation: fadeInFromTopBounce 1s ease;
+}
+
 .header-container {
     display: flex;
     padding-block: .5rem;
@@ -57,4 +61,19 @@
 
 .link-active:hover {
     color: white;
+}
+
+@keyframes fadeInFromTopBounce {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
