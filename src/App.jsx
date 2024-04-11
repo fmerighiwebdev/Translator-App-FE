@@ -8,6 +8,7 @@ import Languages from "./components/Languages";
 import Header from "./components/Header";
 import Detect from "./components/Detect";
 import Translate from "./components/Translate";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <>
               <Header />
               <Home />
+              <Footer />
             </>
           }
         />

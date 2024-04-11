@@ -79,19 +79,20 @@
     background-color: #9f5f24;
 }
 
-.result {
+.translate .result {
     background-color: var(--tertiary-color);
     padding: 1rem;
     border-radius: 5px;
     animation: fadeIn 0.5s ease forwards;
+    margin: 0 0 2rem 0;
 }
 
-.result h3 {
+.translate .result h3 {
     margin: 0 0 1rem 0;
     color: var(--text-color);
 }
 
-.result p {
+.translate .result p {
     margin: 0;
     color: var(--text-color);
 }

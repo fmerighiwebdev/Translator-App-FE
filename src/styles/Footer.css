@@ -1,0 +1,20 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding: 1rem 4rem;
+    border-top-left-radius: 10px;
+}
+
+footer p, footer a {
+    margin: 0;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: white;
+}

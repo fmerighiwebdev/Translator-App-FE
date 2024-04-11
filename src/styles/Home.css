@@ -1,0 +1,49 @@
+.home-container {
+    position: relative;
+    height: calc(100vh - 90px);
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+}
+
+.feature-card h3 {
+    color: var(--text-color);
+}
+
+.feature-card p {
+    color: #958585;
+}
+
+.feature-card:nth-child(1) {
+    top: 100px;
+    left: 200px;
+    transform: rotate(-20deg);
+}
+
+.feature-card:nth-child(3) {
+    top: 100px;
+    right: 200px;
+    transform: rotate(20deg);
+    z-index: 999;
+}
+
+.feature-card:nth-child(2) {
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
