@@ -7,7 +7,7 @@
 }
 
 .translate-form {
-    margin: 4rem auto;
+    margin: 4rem auto 2rem auto;
 }
 
 .select-language {
@@ -103,5 +103,11 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .translate .result {
+        margin: 0 0 2rem 0;
     }
 }
